@@ -1,2 +1,6 @@
 pandas
 bs4
+scikit-learn
+pickle
+streamlit
+gdown

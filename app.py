@@ -21,8 +21,7 @@ def load_model_from_google_drive(fileid, save_path):
     return df, tfidf_matrix
 
 save_path = 'model_pickle.pkl'
-# google_drive_file_id = st.secrets["GOOGLE_DRIVE_FILE_ID"]
-google_drive_file_id = "1Mn_Iei9xDoAuGqRU2G9tXgG4je6-yfuh"
+google_drive_file_id = st.secrets["GOOGLE_DRIVE_FILE_ID"]
 df, tfidf_matrix = load_model_from_google_drive(google_drive_file_id, save_path)
 
 # # Local Save and load

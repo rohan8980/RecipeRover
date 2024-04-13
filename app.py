@@ -70,7 +70,8 @@ if "first_load_more" not in st.session_state:
     st.session_state.first_load_more = False
 
 # Streamlit UI
-st.title("Indian Recipes Recommender")
+st.title("🍵🧆🍲 Recipe Rover 🥘🥣🥧")
+st.write(f'<p style="font-size: large">Recipe Recommendation System</p>', unsafe_allow_html=True)
 st.sidebar.title("Selected Recipe Details")
 sidebar_recipe_name = st.sidebar.empty()
 sidebar_recipe_image = st.sidebar.empty()

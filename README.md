@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project aims to provide personalized recipe recommendations based on the user's preferences and the content of the recipes. It utilizes a content-based recommendation system to suggest similar recipes based on their features such as cuisine, course, diet, preparation time, cooking time, total time, servings, ingredients, and equipment.
+This project aims to provide personalized recipe recommendations based on the user's preferences and the content of the recipes. It utilizes a content-based recommendation system to suggest similar recipes based on their features such as cuisine, course, diet, preparation time, cooking time, total time, servings, ingredients, and equipment. The project is also available to view and interact.
+
+[🍵🧆🍲 Recipe Rover 🥘🥣🥧](https://reciperover.streamlit.app)
 
 
 ## Files
@@ -37,4 +39,4 @@ The project consists of the following components:
 4. **Recipe Recommender Web App (`app.py`)**:
    - The trained model is deployed as a web application using Streamlit.
    - Users can input a recipe name, and the app will recommend similar recipes based on the model.
-   - The web application is hosted [here](https://reciperover.streamlit.apps).
+   - The web application is hosted [here](https://reciperover.streamlit.app).

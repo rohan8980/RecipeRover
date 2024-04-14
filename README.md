@@ -7,11 +7,12 @@ This project aims to provide personalized recipe recommendations based on the us
 
 ## Files
 
-- **Data Cleaning and Preprocessing.ipynb**: Jupyter Notebook containing the code for cleaning and preprocessing the recipe dataset.
-- **Data Modelling.py**: Python script for building a content-based recommendation model and saving it.
+- **Data Scraping**: Jupyter notebook to crawl every page and scrape the recipes information for the dataset.
+- **Data Cleaning and Preprocessing**: Jupyter Notebook containing the code for cleaning and preprocessing the recipe dataset.
+- **Data Modelling**: Jupyter notebook for building a content-based recommendation model and saving it.
 - **Model**: Directory containing the saved recommendation model (`model_pickle.pkl`).
 - **Data**: Directory containing the raw and cleaned recipe datasets (`Recipes.csv` and `Recipes_Clean.csv`).
-- **App**: Directory containing the Streamlit web application code for deploying the recommendation model.
+- **App**: Python script for Streamlit web application code to deploy the recommendation model.
 
 
 ## Overview
@@ -28,12 +29,12 @@ The project consists of the following components:
    - It removes irrelevant columns, handles missing values, merging similar cuisines, and standardizes the format of features.
    - The cleaned data is saved in another CSV file for modeling.
 
-3. **Data Modeling (`Data Modeling.py`)**:
+3. **Data Modeling (`Data Modeling.ipynb`)**:
    - This Python script builds a content-based recommendation model for recipes.
    - It utilizes TF-IDF vectorization and cosine similarity to recommend similar recipes based on the selected relevant features.
    - The model is trained on the cleaned dataset and saved using pickle.
 
-4. **Recipe Recommender Web App**:
+4. **Recipe Recommender Web App (`app.py`)**:
    - The trained model is deployed as a web application using Streamlit.
    - Users can input a recipe name, and the app will recommend similar recipes based on the model.
    - The web application is hosted [here](https://reciperover.streamlit.apps).
